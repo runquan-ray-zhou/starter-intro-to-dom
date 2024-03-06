@@ -8,19 +8,19 @@ ele.classList.add("underline")
 
 const amberArticle = document.createElement("article")
 
-const image = document.createElement("img")
+const amberImage = document.createElement("img")
 
-image.setAttribute(
+amberImage.setAttribute(
     "src",
     "https://placedog.net/500/450"
 )
 
-image.setAttribute(
+amberImage.setAttribute(
     "alt",
     "Amber, the dog."
 )
 
-image.classList.add("animated")
+amberImage.classList.add("animated")
 
 const amberName = document.createElement("h2")
 
@@ -28,7 +28,7 @@ const amberDescriptionP = document.createElement("p")
 
 document.querySelector("main").append(amberArticle)
 
-document.querySelector("article").append(image)
+document.querySelector("article").append(amberImage)
 
 document.querySelector("article").append(amberName)
 
@@ -37,3 +37,37 @@ document.querySelector("h2").innerText = "Amber"
 document.querySelector("article").append(amberDescriptionP)
 
 document.querySelector("p").innerText = "A sweet little doggo that belongs to my friend."
+
+const butterArticle = document.createElement("article")
+
+const butterImage = document.createElement("img")
+
+butterImage.setAttribute(
+    "src",
+    "https://placedog.net/500/441"
+)
+
+butterImage.setAttribute(
+    "alt",
+    "Butter, the dog."
+)
+
+butterImage.classList.add("animated")
+
+butterArticle.classList.add("featured")
+
+const butterName = document.createElement("h2")
+
+const butterDescriptionP = document.createElement("p")
+
+document.querySelector("main").append(butterArticle)
+
+document.querySelector(".featured").append(butterImage)
+
+document.querySelector(".featured").append(butterName)
+
+document.querySelector(".featured h2").innerText = "Butter"
+
+document.querySelector(".featured").append(butterDescriptionP)
+
+document.querySelector(".featured p").innerText = "Man's best friend."
